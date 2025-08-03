@@ -36,4 +36,25 @@ menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
+//  ============================
+//  Stay Updated + Social Media 
+//  ============================
 
+document.getElementById('stay-updated-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const input = this.querySelector('input[type="email"]');
+  const email = input.value.trim();
+  if (email) {
+    let msg = this.querySelector('.thank-you-message');
+    if (!msg) {
+      msg = document.createElement('p');
+      msg.className = 'thank-you-message';
+      msg.style.color = '#0a2540';
+      msg.style.marginTop = '1rem';
+      msg.style.fontWeight = '600';
+      this.appendChild(msg);
+    }
+    msg.textContent = `🎉 Thanks for subscribing, ${email}!`;
+    this.reset();
+  }
+});

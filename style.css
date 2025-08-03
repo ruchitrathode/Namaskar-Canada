@@ -392,3 +392,91 @@ section p {
   color: #4b5563;
   line-height: 1.8;
 }
+
+
+/* Stay Updated Section */
+
+#stay-updated {
+  padding: 3rem 1rem;
+  background-color: #f3f6fb;
+  border-top: 1px solid #d1d9e6;
+  text-align: center;
+}
+
+#stay-updated .content-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#stay-updated h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 0.5rem;
+}
+
+#stay-updated p {
+  color: #3b5360;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+#stay-updated form {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+#stay-updated input[type="email"] {
+  flex-grow: 1;
+  min-width: 200px;
+  padding: 0.6rem 1rem;
+  border: 2px solid #0a2540;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-offset: 2px;
+}
+
+#stay-updated button {
+  background-color: #0a2540;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#stay-updated button:hover,
+#stay-updated button:focus {
+  background-color: #093254;
+}
+
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #0a2540;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  color: #1e88e5;
+}
+
+.social-icons .icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
