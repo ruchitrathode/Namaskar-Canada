@@ -355,3 +355,41 @@ footer {
     margin-left: 0;
   }
 }
+
+
+/* ============================ */
+/* CUSTOM STYLES FOR SEO BLOCKS */
+/* ============================ */
+
+/* ============================ */
+/* TEXT-ONLY SEO SECTIONS STYLE */
+/* ============================ */
+
+section {
+  padding: 3rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #fff;
+}
+
+section:nth-of-type(even) {
+  background-color: #f9fafb;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+section p {
+  /* font-size: 1.125rem; */
+  color: #4b5563;
+  line-height: 1.8;
+}
