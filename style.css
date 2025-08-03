@@ -417,7 +417,7 @@ section p {
 
 #stay-updated p {
   color: #3b5360;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   margin-bottom: 1.5rem;
 }
 
