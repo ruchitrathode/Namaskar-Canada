@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Namaskar Canada – Guide for Indian Students & Immigrants</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Namaskar Canada helps Indian students and immigrants thrive in Canada with detailed guides on visas, housing, jobs, money-saving tips, and more." />
+  <meta name="keywords" content="Indian students in Canada, Canada immigration, study permit Canada, housing tips Canada, Indian immigrants Canada" />
+  <meta name="author" content="Namaskar Canada" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Namaskar Canada – Guide for Indian Students & Immigrants" />
+  <meta property="og:description" content="Helping Indian students and immigrants succeed in Canada through expert tips, guides, and tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://namaskarcanada.com" />
+  <meta property="og:image" content="https://namaskarcanada.com/og-image.jpg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Namaskar Canada – Guide for Indian Students & Immigrants" />
+  <meta name="twitter:description" content="Helping Indian students and immigrants succeed in Canada through expert tips, guides, and tools." />
+  <meta name="twitter:image" content="https://namaskarcanada.com/og-image.jpg" />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <p> This is Rushi Rokad</p>
+<header>
+  <div class="logo" aria-label="Namaskar Canada logo">Namaskar Canada</div>
+  
+  <!-- Hamburger button for mobile -->
+  <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+    <span class="hamburger"></span>
+  </button>
+
+  <nav id="primary-navigation" class="nav-menu">
+    <ul>
+      <li><a href="#" aria-current="page">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Housing</a></li>
+      <li><a href="#">Money Tips</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Helping Indian Students & Immigrants Succeed in Canada</h1>
+      <p>Your guide to studying, living, saving, and thriving in Canada — one real tip at a time.</p>
+      <button onclick="scrollToNewsletter()" aria-label="Join newsletter">Join Our Community</button>
+    </div>
+  </section>
+
+  <section class="features" aria-label="Core topics">
+    <div class="feature">
+      <h2>📚 Study & Visa Guides</h2>
+      <p>Step-by-step guidance on study permits, visa applications, required documents, and timelines to make your journey smooth.</p>
+    </div>
+    <div class="feature">
+      <h2>🏠 Settling in Canada</h2>
+      <p>From airport arrival tips to SIM cards, housing options, transport, and first-week essentials.</p>
+    </div>
+    <div class="feature">
+      <h2>💸 Money & Budget Tips</h2>
+      <p>Budgeting strategies, part-time jobs, saving hacks, understanding taxes, and smart spending for students.</p>
+    </div>
+  </section>
+
+  <section class="about" aria-label="About Namaskar Canada">
+    <h2>About Namaskar Canada</h2>
+    <p>
+      Namaskar Canada is dedicated to supporting Indian students and immigrants on their Canadian journey.
+      We provide highly specific advice, practical tips, and trustworthy resources to make your transition easier and your life better.
+      Whether you're preparing for your first day in Canada or looking for ways to grow professionally, we're here to guide you.
+    </p>
+  </section>
+
+  <section class="content-section" aria-label="Popular blog topics">
+    <h2>Popular Topics</h2>
+    <ul>
+      <li><strong>Why Choose Canada?</strong> Pros and cons of studying or immigrating to Canada.</li>
+      <li><strong>Best Time to Come:</strong> Should you come after 12th or after graduation?</li>
+      <li><strong>Visa Process:</strong> Step-by-step instructions for study permit application.</li>
+      <li><strong>Living Costs:</strong> How to budget for rent, food, and transportation.</li>
+      <li><strong>Job Hunting:</strong> Tips to find part-time work and internships.</li>
+      <li><strong>PR Pathways:</strong> Options and tips to apply for Permanent Residency.</li>
+    </ul>
+  </section>
+
+  <section class="testimonials" aria-label="Testimonials from readers">
+    <h2>What Our Readers Say</h2>
+    <blockquote>
+      "Namaskar Canada helped me understand the visa process clearly and saved me weeks of confusion!" – Anjali, Toronto
+    </blockquote>
+    <blockquote>
+      "The housing tips were so practical and helped me find a great place near my college." – Rahul, Vancouver
+    </blockquote>
+    <blockquote>
+      "Their money-saving advice made a big difference in my budget. Highly recommend!" – Priya, Montreal
+    </blockquote>
+  </section>
+
+  <section class="newsletter" id="newsletter" aria-label="Newsletter subscription">
+    <h2>📩 Stay Updated</h2>
+    <p>Join over 1,000 Indian students and immigrants who get weekly tips, tools, and stories to thrive in Canada.</p>
+    <form>
+      <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
+      <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Namaskar Canada</p>
+    <p>Supporting your Canadian journey, every step of the way.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
