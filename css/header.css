@@ -1,0 +1,114 @@
+/* Header Layout */
+header {
+  background: #00264d;
+  color: white;
+  padding: 1rem 2rem; /* Don't use 20px 0 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Styles */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
+/* Mobile Toggle */
+@media (max-width: 480px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav.nav-menu {
+    display: none;
+    width: 100%;
+    background-color: #00264d;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  nav.nav-menu.show {
+    display: block;
+  }
+
+  nav.nav-menu ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  nav.nav-menu ul li a {
+    padding: 0.7rem 1.5rem;
+    display: block;
+  }
+}

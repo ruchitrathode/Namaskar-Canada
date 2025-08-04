@@ -24,7 +24,8 @@
   <meta name="twitter:description" content="Helping Indian students and immigrants succeed in Canada through expert tips, guides, and tools." />
   <meta name="twitter:image" content="https://namaskarcanada.com/og-image.jpg" />
   
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -109,10 +110,16 @@
   <section class="newsletter" id="newsletter" aria-label="Newsletter subscription">
     <h2>📩 Stay Updated</h2>
     <p>Join over 1,000 Indian students and immigrants who get weekly tips, tools, and stories to thrive in Canada.</p>
-    <form>
-      <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
-      <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
-    </form>
+
+    <form id="newsletter-form">
+  <input type="email" name="email" id="email-input" placeholder="Enter your email" required />
+  <button type="submit">Subscribe</button>
+</form>
+
+    <p id="thank-you-message" style="display: none; margin-top: 1rem; color: #0077b6; font-weight: 600;">
+  🎉 Thank you for subscribing! You're now part of the Namaskar Canada family.
+</p>
+
   </section>
 
   <!-- ========================== -->
@@ -176,15 +183,20 @@
 <!-- ============================ -->
 <!-- Stay Updated + Social Media -->
 <!-- ============================ -->
- 
+
 <section id="stay-updated">
   <div class="content-container">
     <h2>Stay Updated with Namaskar Canada</h2>
     <p>Subscribe to get the latest guides, news, and tips delivered straight to your inbox.</p>
-    <form id="stay-updated-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
+    <form id="newsletter-form">
+  <input type="email" name="email" id="email-input" placeholder="Enter your email" required />
+  <button type="submit">Subscribe</button>
+</form>
+
+    <p id="thank-you-message" style="display: none; margin-top: 1rem; color: #0077b6; font-weight: 600;">
+  🎉 Thank you for subscribing! You're now part of the Namaskar Canada family.
+</p>
+
     <div class="social-icons" aria-label="Social media links">
       <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook">
         <svg class="icon" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.7 0-1 .3-1 1v1h2l-.3 3h-1.7v7A10 10 0 0 0 22 12z"/></svg>
@@ -207,6 +219,26 @@
     <p>© 2025 Namaskar Canada</p>
     <p>Supporting your Canadian journey, every step of the way.</p>
   </footer>
+
+<script>
+  const form = document.getElementById("newsletter-form");
+  const thankYou = document.getElementById("thank-you-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email-input").value;
+
+    fetch("https://script.google.com/macros/s/AKfycbwXHd8PgzWGO1Pa2WITlHSwhr0m48zrwwOsw0Fj6eOc0OK4XkM4T8_mdVEpNjS5jT9e9g/exec", {
+      method: "POST",
+      body: new URLSearchParams({ email }),
+      mode: "no-cors"
+    });
+
+    form.reset();
+    thankYou.style.display = "block";
+  });
+</script>
+
 
   <script src="script.js"></script>
 </body>
